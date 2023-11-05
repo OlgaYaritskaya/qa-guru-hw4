@@ -24,7 +24,7 @@ public class PageHasCodeTest {
         $(".js-wiki-more-pages-link").click();
         $(".wiki-rightbar").shouldHave(text("SoftAssertions"));
 
-        //Откройте страницу SoftAssertions, проверьте, что внутри есть пример кода для JUnit5
+        //Откройте страницу SoftAssertions и проверьте, что внутри есть пример кода для JUnit5
         $(byText("SoftAssertions")).click();
         $("#user-content-3-using-junit5-extend-test-class").sibling(0)
                 .shouldHave(text("@ExtendWith({SoftAssertsExtension.class})\n" +
